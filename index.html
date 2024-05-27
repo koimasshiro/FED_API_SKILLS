@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="./script.js"></script>
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+    <title>FED API Skills Test</title>
+</head>
+
+<body>
+    <div class="header-section">
+        <div class="navbar">
+            <div>
+                <img src="./Assets/Icons/TestLogo.svg" alt="logo" />
+            </div>
+            <div class="nav-menu">
+                <p class="nav-item"><img src="./Assets/Icons/home_FILL0_wght300_GRAD0_opsz24.svg" alt="home-icon"
+                        class="nav-icon" />Overview</p>
+                <p class="nav-item active-item"><img src="./Assets/Icons/group_FILL0_wght300_GRAD0_opsz24.svg"
+                        alt="patients icon" class="nav-icon" />Patients</p>
+                <p class="nav-item"><img src="./Assets/Icons/calendar_today_FILL0_wght300_GRAD0_opsz24.svg"
+                        alt="calender icon" class="nav-icon" />Schedule</p>
+                <p class="nav-item"><img src="./Assets/Icons/chat_bubble_FILL0_wght300_GRAD0_opsz24.svg"
+                        alt="message icon" class="nav-icon" />Message</p>
+                <p class="nav-item"><img src="./Assets/Icons/credit_card_FILL0_wght300_GRAD0_opsz24.svg" alt="card icon"
+                        class="nav-icon" />Transactions</p>
+            </div>
+            <div class="profile-details">
+                <div class="profile-img">
+                    <img src="./Assets/Images/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc.png"
+                        alt="female doctor icon" />
+                </div>
+                <div>
+                    <span><b>Dr. Jose Simmons</b></span>
+                    <span style="color: #707070; font-size: 14px;"><br />General Practitioner</span>
+                </div>
+                <div class="setting_more">
+                    <img src="./Assets/Icons/settings_FILL0_wght300_GRAD0_opsz24.svg" />
+                    <img src="./Assets/Icons/more_vert_FILL0_wght300_GRAD0_opsz24.svg" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-section">
+        <div class="patients-list">
+            <div class="box-one_title">
+                <h2>Patients</h2>
+                <img src="./Assets/Icons/search_FILL0_wght300_GRAD0_opsz24.svg" alt="" />
+            </div>
+            <div class="patients">
+                <div class="patients_item">
+                    <div class="patient_details">
+                        <div class="patient-pic">
+                            <img src="./Assets/Images/Layer 8.png" alt="brunette female patient" />
+                        </div>
+                        <div>
+                            <span class="patient_name">Emily Williams</span>
+                            <span class="patient_age"><br />Female, 18</span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./Assets/Icons/more_horiz_FILL0_wght300_GRAD0_opsz24.svg" />
+                    </div>
+                </div>
+                <div class="patients_item">
+                    <div class="patient_details">
+                        <div class="patient-pic">
+                            <img src="./Assets/Images/Layer 1.png" alt="brunette female patient" />
+                        </div>
+                        <div>
+                            <span class="patient_name">Ryan Johnson</span>
+                            <span class="patient_age"><br />Male, 45</span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./Assets/Icons/more_horiz_FILL0_wght300_GRAD0_opsz24.svg" />
+                    </div>
+                </div>
+                <div class="patients_item">
+                    <div class="patient_details">
+                        <div class="patient-pic">
+                            <img src="./Assets/Images/Layer 3.png" alt="brunette female patient" />
+                        </div>
+                        <div>
+                            <span class="patient_name">Brandon Mitchell</span>
+                            <span class="patient_age"><br />Male, 36</span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./Assets/Icons/more_horiz_FILL0_wght300_GRAD0_opsz24.svg" />
+                    </div>
+                </div>
+                <div class="patients_item curr-patient">
+                    <div class="patient_details">
+                        <div class="patient-pic">
+                            <img src="./Assets/Images/Layer 2-1.png" alt="brunette female patient" />
+                        </div>
+                        <div>
+                            <span class="patient_name">Jessica Taylor</span>
+                            <span class="patient_age"><br />Female, 28</span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./Assets/Icons/more_horiz_FILL0_wght300_GRAD0_opsz24.svg" />
+                    </div>
+                </div>
+                <div class="patients_item">
+                    <div class="patient_details">
+                        <div class="patient-pic">
+                            <img src="./Assets/Images/Layer 6.png" alt="brunette female patient" />
+                        </div>
+                        <div>
+                            <span class="patient_name">Samantha Johnson</span>
+                            <span class="patient_age"><br />Female, 56</span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./Assets/Icons/more_horiz_FILL0_wght300_GRAD0_opsz24.svg" />
+                    </div>
+                </div>
+                <div class="patients_item">
+                    <div class="patient_details">
+                        <div class="patient-pic">
+                            <img src="./Assets/Images/Layer 12.png" alt="brunette female patient" />
+                        </div>
+                        <div>
+                            <span class="patient_name">Ashley Martinez</span>
+                            <span class="patient_age"><br />Female, 54</span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./Assets/Icons/more_horiz_FILL0_wght300_GRAD0_opsz24.svg" />
+                    </div>
+                </div>
+                <div class="patients_item">
+                    <div class="patient_details">
+                        <div class="patient-pic">
+                            <img src="./Assets/Images/Layer 10.png" alt="brunette female patient" />
+                        </div>
+                        <div>
+                            <span class="patient_name">Olivia Brown</span>
+                            <span class="patient_age"><br />Female, 32</span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./Assets/Icons/more_horiz_FILL0_wght300_GRAD0_opsz24.svg" />
+                    </div>
+                </div>
+                <div class="patients_item">
+                    <div class="patient_details">
+                        <div class="patient-pic">
+                            <img src="./Assets/Images/Layer 9.png" alt="brunette female patient" />
+                        </div>
+                        <div>
+                            <span class="patient_name">Tyler Davis</span>
+                            <span class="patient_age"><br />Male, 19</span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./Assets/Icons/more_horiz_FILL0_wght300_GRAD0_opsz24.svg" />
+                    </div>
+                </div>
+                <div class="patients_item">
+                    <div class="patient_details">
+                        <div class="patient-pic">
+                            <img src="./Assets/Images/Layer 4.png" alt="brunette female patient" />
+                        </div>
+                        <div>
+                            <span class="patient_name">Kevin Anderson</span>
+                            <span class="patient_age"><br />Male, 30</span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./Assets/Icons/more_horiz_FILL0_wght300_GRAD0_opsz24.svg" />
+                    </div>
+                </div>
+                <div class="patients_item">
+                    <div class="patient_details">
+                        <div class="patient-pic">
+                            <img src="./Assets/Images/Layer 4.png" alt="brunette female patient" />
+                        </div>
+                        <div>
+                            <span class="patient_name">Kevin Anderson</span>
+                            <span class="patient_age"><br />Male, 30</span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./Assets/Icons/more_horiz_FILL0_wght300_GRAD0_opsz24.svg" />
+                    </div>
+                </div>
+                <div class="patients_item">
+                    <div class="patient_details">
+                        <div class="patient-pic">
+                            <img src="./Assets/Images/Layer 4.png" alt="brunette female patient" />
+                        </div>
+                        <div>
+                            <span class="patient_name">Kevin Anderson</span>
+                            <span class="patient_age"><br />Male, 30</span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./Assets/Icons/more_horiz_FILL0_wght300_GRAD0_opsz24.svg" />
+                    </div>
+                </div>
+                <div class="patients_item">
+                    <div class="patient_details">
+                        <div class="patient-pic">
+                            <img src="./Assets/Images/Layer 4.png" alt="brunette female patient" />
+                        </div>
+                        <div>
+                            <span class="patient_name">Kevin Anderson</span>
+                            <span class="patient_age"><br />Male, 30</span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./Assets/Icons/more_horiz_FILL0_wght300_GRAD0_opsz24.svg" />
+                    </div>
+                </div>
+                <div class="patients_item">
+                    <div class="patient_details">
+                        <div class="patient-pic">
+                            <img src="./Assets/Images/Layer 4.png" alt="brunette female patient" />
+                        </div>
+                        <div>
+                            <span class="patient_name">Kevin Anderson</span>
+                            <span class="patient_age"><br />Male, 30</span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./Assets/Icons/more_horiz_FILL0_wght300_GRAD0_opsz24.svg" />
+                    </div>
+                </div>
+                <div class="patients_item">
+                    <div class="patient_details">
+                        <div class="patient-pic">
+                            <img src="./Assets/Images/Layer 4.png" alt="brunette female patient" />
+                        </div>
+                        <div>
+                            <span class="patient_name">Kevin Anderson</span>
+                            <span class="patient_age"><br />Male, 30</span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./Assets/Icons/more_horiz_FILL0_wght300_GRAD0_opsz24.svg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="diagnosis_section">
+                <div>
+                    <h2>Diagnosis History</h2>
+                        <!-- Diagnosis chart goes here-->
+                        <div class="chart_details">
+                            <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+                            <div>
+
+                            </div>
+                        </div>
+
+                    <div class="patient_diagnosis">
+                        <div class="Respiratory">
+                            <div>
+                                <img src="./Assets/Icons/respiratory rate.svg" />
+                            </div>
+                            <span style="font-size: 16px; color: #072635;">Respiratory Rate</span>
+                            <span style="font-weight: bold; font-size: 30px; color: #072635;"><br />20 bpm</span>
+                            <p style="font-size: 14px; color: #072635;">Normal</p>
+                        </div>
+                        <div class="Temperature">
+                            <div>
+                                <img src="./Assets/Icons/temperature.svg" />
+                            </div>
+                            <span style="font-size: 16px; color: #072635;">Temperature</span>
+                            <span style="font-weight: bold; font-size: 30px; color: #072635;"><br />98.6°F</span>
+                            <p style="font-size: 14px; color: #072635;">Normal</p>
+                        </div>      
+                        <div class="Heart_rate">
+                            <div>
+                                <img src="./Assets/Icons/HeartBPM.svg" />
+                            </div>
+                            <span style="font-size: 16px; color: #072635;">Heart Rate</span>
+                            <span style="font-weight: bold; font-size: 30px; color: #072635;"><br />78 bpm</span>
+                            <p style="font-size: 14px; color: #072635;"><span><img src="./Assets/Icons/ArrowDown.svg"
+                                        style="padding-right: 10px;" /></span>Lower than Average</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="diagnostic-list-section">
+                <h2>Diagnostic List</h2>
+                
+                <div class="diagnostic-list">
+                    <div class="diagnostic-heading">
+                        <div><b>Problem/Diagnosis</b></div>
+                        <div><b>Description</b></div>
+                        <div><b>Status</b></div>
+                    </div>
+                    <div class="diagnostic-item">
+                        <p>Hypertension</p>
+                        <p>Chronic High Blood Pressure</p>
+                        <p>Under Observation</p>
+                    </div>
+                    <div class="diagnostic-item">
+                        <p>Type 2 Diabetes</p>
+                        <p>Insulin resistance and elevated blood sugar</p>
+                        <p>cured</p>
+                    </div>
+                    <div class="diagnostic-item">
+                        <p>Asthma</p>
+                        <p>Recurrent episodes of bronchial constriction</p>
+                        <p>Inactive</p>
+                    </div>
+                    <div class="diagnostic-item">
+                        <p>Osteoarthritis</p>
+                        <p>Degenerative joint disease</p>
+                        <p>Untreated</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="user-section">
+            <div class="user-details">
+                <div class="profile_img_name">
+                    <img src="./Assets/Images/Layer 2.png">
+                    <h2>Jessica Taylor</h2>
+                </div>
+                <div>
+                    <div class="user_detail">
+                        <div><img src="./Assets/Icons/BirthIcon.svg" /></div>
+                        <div class="DOB_details">
+                            <span>Date of Birth</span>
+                            <span><br /><b>August 23, 1996</b></span>
+                        </div>
+                    </div>
+                    <div class="user_detail">
+                        <div><img src="./Assets/Icons/FemaleIcon.svg" /></div>
+                        <div class="DOB_details">
+                            <span>Gender</span>
+                            <span><br /><b>Female</b></span>
+                        </div>
+                    </div>
+                    <div class="user_detail">
+                        <div><img src="./Assets/Icons/PhoneIcon.svg" /></div>
+                        <div class="DOB_details">
+                            <span>Contact Info</span>
+                            <span><br /><b>(415) 555 1234</b> </span>
+                        </div>
+                    </div>
+                    <div class="user_detail">
+                        <div><img src="./Assets/Icons/PhoneIcon.svg" /></div>
+                        <div class="DOB_details">
+                            <span>Emergency Contacts</span>
+                            <span><br /><b>(415) 555 2534</b></span>
+                        </div>
+                    </div>
+                    <div class="user_detail">
+                        <div><img src="./Assets/Icons/InsuranceIcon.svg" /></div>
+                        <div class="DOB_details">
+                            <span>Insurance Provider</span>
+                            <span><br /><b>Sunrise Health Assurance</b></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="profile_btn">
+                <button class="btn"><b>Show All Information</b></button>
+            </div>
+            </div>
+            <div class="lab-results">
+                <h2>Lab Results</h2>
+                <div class="lab-result">
+                    <p>Blood Tests</p>
+                    <img src="./Assets/Icons/download_FILL0_wght300_GRAD0_opsz24 (1).svg" />
+                </div>
+                <div class="lab-result curr-res">
+                    <p>CT Scans</p>
+                    <img src="./Assets/Icons/download_FILL0_wght300_GRAD0_opsz24 (1).svg" />
+                </div>
+                <div class="lab-result">
+                    <p>Radiology Reports</p>
+                    <img src="./Assets/Icons/download_FILL0_wght300_GRAD0_opsz24 (1).svg" />
+                </div>
+                <div class="lab-result">
+                    <p>X-Rays</p>
+                    <img src="./Assets/Icons/download_FILL0_wght300_GRAD0_opsz24 (1).svg" />
+                </div>
+                <div class="lab-result">
+                    <p>Urine Tests</p>
+                    <img src="./Assets/Icons/download_FILL0_wght300_GRAD0_opsz24 (1).svg" />
+                </div>
+            </div>
+        </div>
+        </section>
+</body>
+<script>
+    window.onload = function () {
+    
+    var chart = new CanvasJS.Chart("chartContainer", {
+        animationEnabled: true,
+        exportEnabled: true,
+        title:{
+            text: "Blood Pressure"             
+        }, 
+        toolTip: {
+            shared: true
+        },
+
+        data: [{        
+            type: "spline",  
+            name: "Systolic",        
+            dataPoints: [
+                { label: "oct, 2023" , y: 44 },     
+                { label:"Nov, 2023", y: 37 },     
+                { label: "Dec, 2023", y: 36 },     
+                { label: "Jan, 2024", y: 36 },     
+                { label: "Feb, 2024", y: 46 },
+                { label: "Marc, 2024", y: 160 }
+            ]
+        }, 
+        {        
+            type: "spline",
+            name: "Diastolic",        
+            dataPoints: [
+                { label: "Oct, 2023" , y: 16 },     
+                { label:"Nov, 2023", y: 28 },     
+                { label: "Dec, 2023", y: 32 },     
+                { label: "Jan, 2024", y: 48 },     
+                { label: "Feb, 2024", y: 38 },
+                { label: "Mar, 2024", y: 78 }
+            ]
+        }
+        ]
+    });
+    
+    chart.render();
+    
+    function toggleDataSeries(e) {
+        if(typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+            e.dataSeries.visible = false;
+        }
+        else {
+            e.dataSeries.visible = true;            
+        }
+        chart.render();
+    }
+    
+    }
+    </script>
+    
+</html>
