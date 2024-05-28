@@ -59,6 +59,7 @@ function displayPatient(patient) {
 }
 
 
+
 //function to display patient(Jessica Taylor) details
 
 function displayUser(patient) {
@@ -215,7 +216,6 @@ function displayDiagnosisList(data) {
 }
 
 
-
 //function to display LAB RESULTS
 
 function displayLabResults(data) {
@@ -259,6 +259,4 @@ function displayLabResults(data) {
   }
   
 
-
-  //CHART GRAPH
   

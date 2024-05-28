@@ -260,7 +260,12 @@ body::-webkit-scrollbar-button {
     margin: 0 40px;
 }
 .chart_details{
-    background-color: #F4F0FE;
+    display: flex;
+    flex-direction: row;
+    background: #F4F0FE;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
 }
 .patient_diagnosis{
     display: flex;
