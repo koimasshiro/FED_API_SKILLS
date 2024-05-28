@@ -27,13 +27,12 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
 //function to display Jessica Taylor on List of patients
 function displayPatient(patient) {
   const patientsList = document.querySelector(".curr-patient");
   patientsList.innerHTML = ""; // Clear existing content
 
-  // const patientItem = document.createElement('div');
-  // patientItem.className = 'patients_item';
 
   const patientItem = Object.assign(document.createElement("div"), {
     className: "patients_item",
@@ -65,9 +64,6 @@ function displayPatient(patient) {
 function displayUser(patient) {
   const patientList = document.querySelector(".user-details");
   patientList.innerHTML = ""; // Clear existing content
-
-  // const patientItem = document.createElement('div');
-  // patientItem.className = 'patients_item';
 
   const patientItem = Object.assign(document.createElement("div"), {
     className: "patient_item",
@@ -127,13 +123,10 @@ function displayDiagnosisHistory(patient) {
   const patientData = document.querySelector(".patient_diagnosis");
   patientData.innerHTML = ""; // Clear existing content
 
-  // const patientItem = document.createElement('div');
-  // patientItem.className = 'patients_item';
 
   const patientItem = Object.assign(document.createElement("div"), {
     className: "patient_item",
   });
-  console.log(patient);
   const patientDetails = `
     <div class="patient_diagnosis">
     <div class="Respiratory">
@@ -177,9 +170,6 @@ function displayDiagnosisList(data) {
   const patientData = document.querySelector(".diagnostic-list");
   patientData.innerHTML = ""; // Clear existing content
 
-  // const patientItem = document.createElement('div');
-  // patientItem.className = 'patients_item';
-    console.log(data)
   const patientItem = Object.assign(document.createElement("div"), {
     className: "patient_item",
   });
@@ -224,7 +214,7 @@ function displayLabResults(data) {
   
     // const patientItem = document.createElement('div');
     // patientItem.className = 'patients_item';
-      console.log(data)
+    console.log(data);
     const patientItem = Object.assign(document.createElement("div"), {
       className: "patient_item",
     });
